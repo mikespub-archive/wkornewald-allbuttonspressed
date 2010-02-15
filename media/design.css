@@ -145,6 +145,10 @@ body {
   color: #36393D;
 }
 
+.relevant-projects {
+  list-style: none;
+}
+
 a {
   color: #1985B5;
 }
@@ -156,7 +160,6 @@ a:hover {
 #header {
   height: 135px;
   border-bottom: 4px solid #36393D;
-  border-top: 4px solid #36393D;
   margin-bottom: 50px;
   margin-top: 20px;
 }
@@ -189,7 +192,7 @@ a:hover {
   float: left;
   margin:0 75px;
   margin-top: 25px;
-  width: 840px;
+  width: 860px;
 }
 
 .menu li {
@@ -199,7 +202,9 @@ a:hover {
   font-size: 18px;
 }
 
-.menu li.active {
+.menu li.active-menu-item {
+  font-weight: bold;
+  color: black;
 }
 
 h1 {
@@ -293,7 +298,8 @@ h2 a.external:hover {
 }
 
 .feed-widget {
-   margin-bottom: 10px;
+  clear: both;
+  margin-bottom: 10px;
 }
 
 div.profile-img-div.figure.align-left {
@@ -305,9 +311,23 @@ div.profile-img-div.figure.align-left {
   border: 1px solid #F0EDDA;
 }
 
+.project-links {
+  list-style: none;
+  margin-left: 0px
+}
+
+.project-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.relevant-projects {
+  margin-left: 5px;
+}
+
 p.dsq-widget-meta {
   background-color: #F0EDDE;
-  padding: 5px;
+  padding: 5px ! important;
 
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -319,11 +339,3 @@ ul.dsq-widget-list {
   margin: 0;
 }
 
-.gs-webResult.gs-result .gs-title .gs-title a:hover {
-  text-decoration: underline;
-}
-/* TODO FIX THIS */
-
-.section {
-  margin-bottom: 30px;
-}
